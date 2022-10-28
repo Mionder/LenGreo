@@ -801,6 +801,7 @@ h1 {
     text-align: left;
     letter-spacing: 0.03em;
     color: #ACE231;
+    text-transform: uppercase;
     @media(max-width: 480px) {
         font-size: 50px;
         line-height: 62px;
@@ -943,6 +944,154 @@ h1 {
                 }
                 @media(max-width: 480px) {
                     margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.portfolio {
+    padding: 150px 0;
+    @media(max-width: 990px) {
+        padding: 120px 0;
+    }
+    @media(max-width: 480px) {
+        padding: 75px 0;
+    }
+    .wrapper {
+        position: relative;
+        .h1-title {
+            text-align: right;
+        }
+        .img-wrapper {
+            position: absolute;
+            top: -100%;
+            left: -5%;
+            @media(max-width: 1160px) {
+                top: -25%;
+            }
+            img {
+                max-width: 576px;
+                width: 100%;
+                height: auto;
+                @media(max-width: 990px) {
+                    max-width: 480px;
+                }
+            }
+        }
+    }
+}
+
+.content-portfolio {
+    padding: 150px 0 260px;
+    @media(max-width: 990px) {
+        padding: 120px 0 200px;
+    }
+    @media(max-width: 480px) {
+        padding: 75px 0 110px;
+    }
+    .wrapper {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media(max-width: 770px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .select-menu {
+            display: flex;
+            flex-direction: column;
+            min-width: 25%;
+            @media(max-width: 770px) {
+                align-items: center;
+            }
+            .item {
+                padding: 8px 12px;
+                margin-bottom: 16px;
+                border: 3px solid #ACE231;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #ACE231;
+                cursor: pointer;
+                max-width: fit-content;
+            }
+            .item:last-child {
+                margin-bottom: 0;
+            }
+            .active-item {
+                color: #FFFFFF;
+                font-weight: 700;
+                background: #ACE231;
+            }
+        }
+        .cases-wrapper {
+            display: flex;
+            flex-direction: column;
+            .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px 60px;
+                margin-bottom: 120px;
+                @media(max-width: 480px) {
+                    flex-direction: column;
+                }
+                .title {
+                    font-family: 'Work Sans';
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 47px;
+                    letter-spacing: 0.03em;
+                    color: #ACE231;
+                    @media(max-width: 480px) {
+                        text-align: center;
+                    }
+                }
+                .text {
+                    font-family: 'Work Sans';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                    margin: 40px 0 20px;
+                }
+                .label {
+                    font-family: 'Work Sans';
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #ACE231;                    
+                    border: 3px solid #ACE231;
+                    padding: 8px 12px;
+                    max-width: fit-content;
+                }
+                .img-wrapper {
+                    margin-right: 40px;
+                    img {
+                        
+                    }
+                }
+            }
+            .item:last-child {
+                background: #ACE231;
+                margin-bottom: 0;
+                .title, .text, .label {
+                    color: #08080A;
+                }
+                .text {
+                    font-weight: 600;
+                }
+                .label {
+                    border: 3px solid #08080A;
                 }
             }
         }
