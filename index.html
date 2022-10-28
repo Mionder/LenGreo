@@ -155,6 +155,24 @@
                 <div class="action-btn">LET’S TALK</div>
             </div>
         </div>
+        <form action="POST" id="contact-form">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1123 22.2348C21.5028 22.6253 22.136 22.6253 22.5265 22.2348C22.917 21.8443 22.917 21.2111 22.5265 20.8206L13.3337 11.6278L23.2343 1.72713C23.6249 1.3366 23.6249 0.703437 23.2343 0.312913C22.8438 -0.0776109 22.2107 -0.0776109 21.8201 0.312913L11.9195 10.2136L2.02039 0.314478C1.62987 -0.0760464 0.996701 -0.0760464 0.606177 0.314478C0.215653 0.705001 0.215653 1.33817 0.606177 1.72869L10.5053 11.6278L1.31403 20.819C0.923509 21.2095 0.923509 21.8427 1.31403 22.2332C1.70456 22.6237 2.33772 22.6237 2.72825 22.2332L11.9195 13.042L21.1123 22.2348Z" fill="#ACE231"/>
+            </svg>            
+            <div>
+                <h3>contact us</h3>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="website">Website</label>
+                <label for="website" id="necessary">not necessary</label>
+                <input type="text" id="website" placeholder="http://site.com">
+                <label for="details">Tell us what you’re looking for?</label>
+                <textarea name="details" id="details" cols="30" rows="10"></textarea>
+                <input type="submit" value="CONTACT US">
+            </div>
+        </form>
     </section>
 
     <footer class="footer">
@@ -245,6 +263,20 @@
                 $('body').height('auto');
                 $('body').removeClass('overflow-hidden');
             }) 
+            $('.action-btn').click(() => {
+                $('#contact-form').addClass('d-flex');
+                $('#menu-header').addClass('opened-menu');
+                $('#burger-cancel').addClass('opened-menu_icon');
+                $('body').height('100vh');
+                $('body').addClass('overflow-hidden');
+            })
+            $('#contact-form svg').click(() => {
+                $('#contact-form').removeClass('d-flex');
+                $('#menu-header').removeClass('opened-menu');
+                $('#burger-cancel').removeClass('opened-menu_icon');
+                $('body').height('auto');
+                $('body').removeClass('overflow-hidden');
+            })
         })
         
     </script>
