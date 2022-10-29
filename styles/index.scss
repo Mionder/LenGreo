@@ -962,6 +962,9 @@ h1 {
         position: relative;
         .h1-title {
             text-align: right;
+            @media(max-width: 392px) {
+                text-align: left;
+            }
         }
         .img-wrapper {
             position: absolute;
@@ -970,12 +973,23 @@ h1 {
             @media(max-width: 1160px) {
                 top: -25%;
             }
+            @media(max-width: 480px) {
+                top: -80%;
+                left: 10%;
+            }
+            @media(max-width: 392px) {
+                top: -30%;
+                left: 5%;
+            }
             img {
                 max-width: 576px;
                 width: 100%;
                 height: auto;
                 @media(max-width: 990px) {
                     max-width: 480px;
+                }
+                @media(max-width: 480px) {
+                    max-width: 240px;
                 }
             }
         }
@@ -1006,6 +1020,9 @@ h1 {
             @media(max-width: 770px) {
                 align-items: center;
             }
+            @media(max-width: 480px) {
+                margin-bottom: 60px;
+            }
             .item {
                 padding: 8px 12px;
                 margin-bottom: 16px;
@@ -1022,6 +1039,9 @@ h1 {
                 color: #ACE231;
                 cursor: pointer;
                 max-width: fit-content;
+                @media(max-width: 480px) {
+                    max-width: 100%;
+                }
             }
             .item:last-child {
                 margin-bottom: 0;
@@ -1036,6 +1056,7 @@ h1 {
             display: flex;
             flex-direction: column;
             .item {
+                transition: .3s;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1043,6 +1064,10 @@ h1 {
                 margin-bottom: 120px;
                 @media(max-width: 480px) {
                     flex-direction: column;
+                    padding: 40px 44px;
+                    margin-bottom: 60px;
+                    margin-left: -5%;
+                    margin-right: -5%;
                 }
                 .title {
                     font-family: 'Work Sans';
@@ -1076,14 +1101,26 @@ h1 {
                 }
                 .img-wrapper {
                     margin-right: 40px;
-                    img {
-                        
+                    @media(max-width: 480px) {
+                        margin-right: 0;
+                    }
+                    svg {
+                        stroke: #08080A;
+                        circle {
+                            stroke: #ACE231;
+                        }
+                        circle:first-child {
+                            fill: #ACE231;
+                        }
+                        path {
+                            fill: #08080A !important;
+                        }
                     }
                 }
             }
-            .item:last-child {
+            .item:hover {
+                transition: .3s;
                 background: #ACE231;
-                margin-bottom: 0;
                 .title, .text, .label {
                     color: #08080A;
                 }
@@ -1093,6 +1130,23 @@ h1 {
                 .label {
                     border: 3px solid #08080A;
                 }
+                .img-wrapper {
+                    svg {
+                        stroke: #ACE231;
+                        circle {
+                            stroke: #08080A;
+                        }
+                        circle:first-child {
+                            fill: #08080A;
+                        }
+                        path {
+                            fill: #ACE231 !important;
+                        }
+                    }
+                }
+            }
+            .item:last-child {
+                margin-bottom: 0;
             }
         }
     }
