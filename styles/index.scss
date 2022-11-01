@@ -1433,3 +1433,194 @@ h1 {
         height: auto;
     }
 }
+
+.main {
+    padding: 150px 0;
+    .wrapper {
+        position: relative;
+        .back-wrapper {
+            position: absolute;
+            top: -150px;
+            left: 0;
+            display: block;
+            cursor: pointer;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;   
+                font-family: 'Clash Display';
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        .section-wrapper {
+            position: relative;
+            .img-wrapper {
+                position: absolute;
+                top: -122px;
+                right: 0;
+            }
+            .h1-title {
+                max-width: 730px;
+            }
+        }
+    }
+}
+
+.cases-title {
+    font-family: 'Clash Display';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ACE231;
+}
+
+.introduction {
+    padding: 150px 0 100px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 80px;
+        .content {
+            max-width: 860px;
+            .item {
+                font-family: 'Work Sans';
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+                letter-spacing: 0.05em;
+                margin-bottom: 20px;
+                color: #FFFFFF;
+                span {
+                    color: #ACE231;
+                    margin-right: 6px;
+                }
+            }
+            .item:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.client-review_title {
+    max-width: fit-content;
+    margin-left: 30%;
+}
+
+.client-review {
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        .content {
+            margin-left: 115px;
+            .quote {
+                font-family: 'Clash Display';
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                position: relative;
+            }
+            .quote::before {
+                content: '“';
+                position: absolute;
+                top: -48px;
+                left: -36px;
+                font-family: 'Clash Display';
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 74px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+            }
+            .quote::after {
+                content: '”';
+                position: absolute;
+                bottom: -48px;
+                right: -36px;
+                font-family: 'Clash Display';
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 74px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+            }
+            .link {
+                font-family: 'Clash Display';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #ACE231;
+                text-decoration: underline;
+                margin-top: 40px;
+                display: block;
+            }
+        }
+    }
+}
+
+.long-story {
+    padding: 100px 0 35px;
+    .wrapper {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content {
+            margin-right: 48px;
+            max-width: 860px;
+            .text {
+                font-family: 'Work Sans';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+.challenge-title {
+    max-width: fit-content;
+    margin-left: 25%;
+}
+
+.challenge {
+    padding: 35px 0 100px;
+    .wrapper {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content {
+            margin-left: 75px;
+            .item {
+                font-family: 'Work Sans';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                margin-top: 25px;
+            }
+        }
+        .img-wrapper {
+            margin-top: 25px;
+        }
+    }
+}
