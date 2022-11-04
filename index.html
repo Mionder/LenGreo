@@ -132,18 +132,18 @@
         <div class="container">
             <h2 class="section-title">OUR SERVICES</h2>
             <div class="services-wrapper">
-                <div class="item">Strategy Development</div>
-                <div class="item">smm</div>
-                <div class="item">Paid
-                    Ads</div>
-                <div class="item">Influencer Marketing</div>
-                <div class="item">Content
-                    Marketing</div>
-                <div class="item">Sales
-                    Process</div>
-                <div class="item">Lead
-                    Generation</div>
-                <div class="item">Design</div>
+                <a href="#" class="item">Strategy Development</a>
+                <a href="#" class="item">smm</a>
+                <a href="#" class="item">Paid
+                    Ads</a>
+                <a href="#" class="item">Influencer Marketing</a>
+                <a href="#" class="item">Content
+                    Marketing</a>
+                <a href="#" class="item">Sales
+                    Process</a>
+                <a href="#" class="item">Lead
+                    Generation</a>
+                <a href="#" class="item">Design</a>
             </div>
         </div>
     </section>
@@ -272,6 +272,18 @@
                 $('#burger-cancel').removeClass('opened-menu_icon');
                 $('body').height('auto');
                 $('body').removeClass('overflow-hidden');
+            })
+            $('.select-menu .item').click(() => {
+                $('.select-menu .item').removeClass('active-item');
+                $(this).addClass('active-item');
+            })
+            $(window).scroll(function() {
+                console.log(window.pageYOffset);
+                if (window.pageYOffset > 50) {
+                    $('.header').css('position', 'fixed')
+                } else {
+                    $('.header').css('position', 'relative')
+                }
             })
         })
         

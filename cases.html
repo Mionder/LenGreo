@@ -334,6 +334,14 @@
                 $('body').height('auto');
                 $('body').removeClass('overflow-hidden');
             })
+            $(window).scroll(function() {
+                console.log(window.pageYOffset);
+                if (window.pageYOffset > 50) {
+                    $('.header').css('position', 'fixed')
+                } else {
+                    $('.header').css('position', 'relative')
+                }
+            })
         })
         
     </script>
