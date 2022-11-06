@@ -1,0 +1,22 @@
+.img-wrapper-arrow {
+    animation: 20s linear animAbout infinite;
+}
+
+#contact-form {
+    div {
+        input[type=submit] {
+            @media(max-width: 392px) {
+                height: 54px !important;
+            }
+        }
+    }
+}
+
+@keyframes animAbout {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

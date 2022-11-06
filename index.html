@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LenGreo</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/animations.css">
     <link href="http://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/work-sans" rel="stylesheet">
 </head>
@@ -278,11 +279,17 @@
                 $(this).addClass('active-item');
             })
             $(window).scroll(function() {
-                console.log(window.pageYOffset);
                 if (window.pageYOffset > 50) {
                     $('.header').css('position', 'fixed')
                 } else {
                     $('.header').css('position', 'relative')
+                }
+            })
+            $(window).scroll(function() {
+                if ($(".needs").offset().top < window.pageYOffset + 175 && window.pageYOffset + 450 < $('.services').offset().top) {
+                    $('.arrow-fixed').css('position', 'fixed');
+                } else {
+                    $('.arrow-fixed').css('position', 'absolute');
                 }
             })
         })

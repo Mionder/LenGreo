@@ -1,0 +1,1 @@
+.img-wrapper-arrow{animation:20s linear animAbout infinite}@media(max-width: 392px){#contact-form div input[type=submit]{height:54px !important}}@keyframes animAbout{from{transform:rotate(0)}to{transform:rotate(360deg)}}
